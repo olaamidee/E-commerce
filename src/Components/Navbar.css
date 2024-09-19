@@ -1,0 +1,114 @@
+/* General styles for the navbar */
+.navbar-container {
+    background: #ff6f61; /* Vibrant background color */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  }
+  
+  .navbar-title {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  
+  .navbar-menu-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .navbar-hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-item {
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .navbar-item:hover {
+    color: #ffd54f; /* Light yellow for hover effect */
+  }
+  
+  .navbar-cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .navbar-cart-icon {
+    font-size: 2rem;
+  }
+  
+  .navbar-cart-text {
+    font-size: 1rem;
+  }
+  
+  /* Responsive Styles for Hamburger Menu */
+  @media (max-width: 768px) {
+    .navbar-hamburger {
+      display: block;
+    }
+  
+    .navbar-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: #ff6f61; /* Match background color */
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+      width: 200px; /* Fixed width for menu */
+      z-index: 1000; /* Ensure it sits above other content */
+    }
+  
+    .navbar-menu.active {
+      display: flex;
+    }
+  
+    .navbar-item {
+      padding: 10px;
+      text-align: center;
+      font-size: 1rem;
+    }
+  
+    .navbar-item:hover {
+      color: #ffd54f; /* Light yellow for hover effect */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar-title {
+      font-size: 1.5rem; /* Further reduce font size on mobile */
+    }
+  
+    .navbar-item {
+      font-size: 0.9rem;
+    }
+  
+    .navbar-cart-icon {
+      font-size: 1.5rem;
+    }
+  }
+  

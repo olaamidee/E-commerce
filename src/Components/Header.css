@@ -1,0 +1,91 @@
+/* General styles for the header */
+.header-container {
+    background: linear-gradient(125deg, #ff6f61, #ffcc00); /* Gradient background */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  }
+  
+  .header-title {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .header-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .header-info {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+  
+  .header-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; /* Ensure elements wrap on smaller screens */
+  }
+  
+  .header-input {
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    max-width: 90%; /* Shrink on smaller screens */
+    margin-bottom: 10px; /* Space below input */
+    outline: none;
+  }
+  
+  .header-button {
+    padding: 12px 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 15%;
+    background: #00bcd4; /* Teal for Search */
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 5px; /* Space around the button */
+  }
+  
+  .header-button:hover {
+    background: #0097a7;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .header-title {
+      font-size: 2rem; /* Smaller font size for tablets */
+    }
+  
+    .header-description {
+      font-size: 1rem;
+    }
+  
+    .header-input {
+      width: 100%; /* Full width input on smaller screens */
+      margin-bottom: 10px;
+    }
+  
+    .header-form {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-title {
+      font-size: 1.5rem; /* Further reduce font size on mobile */
+    }
+  
+    .header-description, .header-info {
+      font-size: 0.9rem;
+    }
+  }
+  
