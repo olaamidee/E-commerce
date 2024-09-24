@@ -8,6 +8,7 @@ import AboutPage from './Pages/AboutPage';
 import ProductPage from './Pages/ProductPage';
 import ContactPage from './Pages/ContactPage';
 import CartPage from './Pages/CartPage';
+import Footer from './Components/Footer.js'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/contact" element={<ContactPage/>} />
           <Route exact path="/cart" element={<CartPage/>} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

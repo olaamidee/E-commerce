@@ -1,0 +1,41 @@
+/* Aside.css */
+
+.aside-container {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 200px;
+    box-shadow:1px 2px 3px;
+    margin-top:10px;
+    
+  }
+  
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #343a40;
+    margin-bottom: 10px;
+  }
+
+  .item:hover{
+    background-color:rgba(150, 148, 148, 0.401);
+    padding:5px;
+  }
+  
+  .item {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: #495057;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+  
+  .icon {
+    margin-right: 8px;
+    font-size: 20px;
+  }
+  

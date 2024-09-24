@@ -1,9 +1,10 @@
 import React from 'react'
+import Aside from '../Components/Aside.js'
 
 function HomePage() {
   return (
     <div>
-        vekbvk
+        <Aside/>
     </div>
   )
 }
