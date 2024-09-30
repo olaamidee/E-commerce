@@ -1,0 +1,102 @@
+/* Container for the entire product list */
+.product-container {
+    width:80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the container size */
+  }
+  
+  /* Each product card */
+  .card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Product images */
+  .product-image {
+    width: 100%;
+    height: 250px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Content inside each product card */
+  .card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Spreads content evenly */
+    flex-grow: 1;
+  }
+  
+  /* Product title styling */
+  .card-content h2 {
+    font-size: 1.4rem;
+    margin: 0 0 10px;
+    color: #333;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  /* Description styling */
+  .card-content p {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  
+  /* Price styling */
+  .price {
+    font-size: 1.2rem;
+    color: #e60000;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Add to Cart button styling */
+  .add-cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .add-cart-button span {
+    margin-left: 10px;
+  }
+  
+  .add-cart-button:hover {
+    background-color: #218838;
+  }
+  
+  .add-cart-button .fa-shopping-cart {
+    font-size: 1.2rem;
+  }
+  
