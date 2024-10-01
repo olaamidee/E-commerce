@@ -7,6 +7,7 @@
     align-items: center;
     padding: 15px 20px;
     position: relative;
+    z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
     position:fixed;
     top:0;

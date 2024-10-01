@@ -5,10 +5,14 @@
     background-color: #f8f9fa;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    width: 200px;
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
     box-shadow:1px 2px 3px;
     margin-top:10px;
-    
+    position: sticky;
+    top: 20%;
+    z-index:1000; 
   }
   
   .title {

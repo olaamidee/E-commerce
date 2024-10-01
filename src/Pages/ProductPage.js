@@ -1,8 +1,11 @@
 import React from 'react'
+import Product from '../Components/Product.js'
 
 function ProductPage() {
   return (
-    <div>bcebvebvb</div>
+    <div>
+      <Product/>
+    </div>
   )
 }
 
