@@ -1,0 +1,78 @@
+.cart-page-container {
+    padding: 20px;
+  }
+  
+  .cart-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .cart-items-section {
+    flex: 2; /* Make the cart items section wider */
+    margin-right: 20px; /* Add space between items and total */
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .cart-item-image {
+    width: 80px;  /* Smaller image size */
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .cart-item-details {
+    flex: 1;
+  }
+  
+  .cart-item-controls {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .cart-item-controls button {
+    background: none;
+    border: 1px solid #000;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .cart-item-controls button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .cart-summary-section {
+    flex: 1;  /* Reduce the width of the summary section */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;  /* Align the summary content to the right */
+  }
+  
+  .cart-summary {
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: right;  /* Make the total text right-aligned */
+    background-color: #f9f9f9;
+    width: 100%;
+    max-width: 250px;  /* Limit the width of the summary */
+  }
+  
+  .clear-cart-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .clear-cart-button:hover {
+    background-color: darkred;
+  }
+  
