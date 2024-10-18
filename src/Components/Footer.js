@@ -1,6 +1,7 @@
 // Footer.js
 import React from 'react';
-import './Footer.css'; // Assuming you are using CSS for styling
+import './Footer.css';
+import { FaFacebook, FaYoutube, FaInstagram, FaWhatsapp, FaLinkedin, FaTwitter} from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -37,13 +38,13 @@ const Footer = () => {
             <button type="submit">Subscribe</button>
           </form>
           <div className="social-icons">
-            <a href="https://wa.me/"><i className="fab fa-whatsapp"></i></a>
-            <a href="https://youtube.com"><i className="fab fa-youtube"></i></a>
-            <a href="https://instagram.com"><i className="fab fa-instagram"></i></a>
-            <a href="https://facebook.com"><i className="fab fa-facebook"></i></a>
-            <a href="https://linkedin.com"><i className="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com"><i className="fab fa-twitter"></i></a>
-          </div>
+                    <a href="https://wa.me/" aria-label="WhatsApp" className="icon whatsapp"><FaWhatsapp /></a>
+                    <a href="https://facebook.com" aria-label="Facebook" className="icon facebook"><FaFacebook /></a>
+                    <a href="https://youtube.com" aria-label="YouTube" className="icon youtube"><FaYoutube /></a>
+                    <a href="https://instagram.com" aria-label="Instagram" className="icon instagram"><FaInstagram /></a>
+                    <a href="https://linkedin.com" aria-label="LinkedIn" className="icon linkedin"><FaLinkedin /></a>
+                    <a href="https://twitter.com" aria-label="Twitter" className="icon twitter"><FaTwitter /></a>
+                </div>
           <p>Mobile: +917892474250</p>
           <p>Email: E-commerce@yahoo.com</p>
         </div>
